@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import FileTree from './components/FileTree';
+import data from './data.js';
+
 ReactDOM.render(
-	<div>
-	    <h1>React File Tree</h1>
-  	</div>,
+	<FileTree 
+		data={data}
+	/>,
   	document.getElementById('root'),
 );
