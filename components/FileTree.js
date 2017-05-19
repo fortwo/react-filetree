@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import TreeNode from './TreeNode';
 
@@ -26,7 +27,7 @@ class FileTree extends React.Component {
 }
 
 FileTree.propTypes = {
-	data: React.PropTypes.array.isRequired,
+	data: PropTypes.array.isRequired,
 };
 
 export default FileTree;

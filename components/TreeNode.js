@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class TreeNode extends React.Component {
 	render() {
@@ -28,10 +29,10 @@ class TreeNode extends React.Component {
 }
 
 TreeNode.propTypes = {
-	id: React.PropTypes.string.isRequired,
-	name: React.PropTypes.string.isRequired,
-	icon: React.PropTypes.string.isRequired,
-	children: React.PropTypes.array.isRequired,
+	id: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	icon: PropTypes.string.isRequired,
+	children: PropTypes.array.isRequired,
 };
 
 export default TreeNode;
