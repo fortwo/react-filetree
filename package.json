@@ -1,7 +1,7 @@
 {
   "name": "react-filetree",
-  "version": "0.0.1",
-  "description": "Simple filetree build with React",
+  "version": "1.0.0",
+  "description": "Simple filetree build with ReactJS",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot"
