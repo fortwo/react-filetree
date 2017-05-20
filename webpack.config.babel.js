@@ -13,7 +13,18 @@ const options = {
         query: {
           presets: ['es2015', 'react']
         }
-      }
+      }, {
+        test: /\.(jpg|png|gif)$/,
+        loader: 'file-loader',
+      }, {
+        test: /\.(jpg|png|gif)$/,
+        loader: 'image-webpack-loader',
+        query: {
+          optipng: {
+            optimizationLevel: 7,
+          },
+        }
+      },
     ]
   },
 };
