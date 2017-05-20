@@ -15,6 +15,7 @@ class FileTree extends React.Component {
 							name={data.name}
 							icon={data.icon}
 							children={data.children}
+							action={data.action}
 						/>
 					);
 				})}

@@ -7,7 +7,6 @@ import OpenFolder from '../assets/open-folder.png';
 class Folder extends React.Component {
 	render() {
 		const icon = this.props.open ? this.props.icons.open : this.props.icons.close;
-		console.log('icon', icon, this.props.open)
 
 		return (
 			<div style={{ cursor: 'pointer' }} onClick={this.props.toggleFolder}>

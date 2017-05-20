@@ -1,3 +1,7 @@
+const action = (event) => {
+	console.log('action', event)
+}
+
 const data = [
 	{
 		id: '0',
@@ -6,9 +10,11 @@ const data = [
 			{
 				id: '1',
 				name: 'File 1 in Folder 1',
+				action,
 			}, {
 				id: '2',
 				name: 'File 2 in Folder 2',
+				action,
 			},
 		],
 	}, {
@@ -25,6 +31,7 @@ const data = [
 			}, {
 				id: '6',
 				name: 'File 2 in Folder 2',
+				action,
 			}, {
 				id: '7',
 				name: 'File 3 in Folder 2',

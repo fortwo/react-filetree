@@ -41,6 +41,7 @@ class TreeNode extends React.Component {
 										name={child.name}
 										icon={child.icon}
 										children={child.children}
+										action={child.action}
 									/>
 								))
 							}
@@ -57,8 +58,10 @@ class TreeNode extends React.Component {
 					/>
 				:
 					<File 
+						id={this.props.id}
 						name={this.props.name}
 						icon={this.props.icon}
+						action={this.props.action}
 					/>
 			);
 		}
@@ -70,6 +73,7 @@ TreeNode.propTypes = {
 	name: PropTypes.string.isRequired,
 	icon: PropTypes.string,
 	children: PropTypes.array,
+	action: PropTypes.func,
 };
 
 export default TreeNode;
