@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import File from './File.js';
+import Folder from './Folder.js';
+
 class TreeNode extends React.Component {
 	render() {
-		if (this.props.children.length) {
+		if (this.props.children && this.props.children.length) {
 			return (
 				<div>
-					<span>Folder: {this.props.name}</span>
+					<Folder 
+						name={this.props.name}
+						icon={this.props.icon}
+					/>
 					{this.props.children.map((child) => {
 						return (
 							<TreeNode 
@@ -14,7 +20,7 @@ class TreeNode extends React.Component {
 								id={child.id}
 								name={child.name}
 								icon={child.icon}
-								children={child.children || []}
+								children={child.children}
 							/>
 						);
 					})}
@@ -22,7 +28,16 @@ class TreeNode extends React.Component {
 			);
 		} else {
 			return (
-				<span>File: {this.props.name}</span>
+				(this.props.children && !this.props.children.length) ?			
+					<Folder 
+						name={this.props.name}
+						icon={this.props.icon}
+					/>
+				:
+					<File 
+						name={this.props.name}
+						icon={this.props.icon}
+					/>
 			);
 		}
 	}
@@ -32,7 +47,7 @@ TreeNode.propTypes = {
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
 	icon: PropTypes.string.isRequired,
-	children: PropTypes.array.isRequired,
+	children: PropTypes.array,
 };
 
 export default TreeNode;

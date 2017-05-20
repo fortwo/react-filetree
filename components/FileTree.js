@@ -9,16 +9,13 @@ class FileTree extends React.Component {
 			<div>
 				{this.props.data.map((data) => {
 					return (
-						(data.children && data.children.length) ?
-							<TreeNode 
-								key={data.id}
-								id={data.id}
-								name={data.name}
-								icon={data.icon}
-								children={data.children}
-							/>
-						:
-							<span key={data.id}>FILE: {data.name}</span>
+						<TreeNode 
+							key={data.id}
+							id={data.id}
+							name={data.name}
+							icon={data.icon}
+							children={data.children}
+						/>
 					);
 				})}
 			</div>

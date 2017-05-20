@@ -1,42 +1,47 @@
 const data = [
 	{
 		id: '0',
-		name: 'test folder 1',
+		name: 'Folder 1',
 		icon: 'fa',
 		children: [
 			{
 				id: '1',
-				name: 'test child 1 of folder 1',
+				name: 'File 1 in Folder 1',
 				icon: 'fa',
 			}, {
 				id: '2',
-				name: 'test child 2 of folder 2',
+				name: 'File 2 in Folder 2',
 				icon: 'fa',
 			},
 		],
 	}, {
 		id: '3',
-		name: 'test folder 2',
+		name: 'Empty Folder',
 		icon: 'fa',
+		children: [],
 	}, {
 		id: '4',
-		name: 'test folder 3',
+		name: 'Folder 2',
 		icon: 'fa',
 		children: [
 			{
 				id: '5',
-				name: 'test child 1 of folder 3',
+				name: 'File 1 in Folder 2',
 				icon: 'fa',
 			}, {
 				id: '6',
-				name: 'test child 2 of folder 3',
+				name: 'File 2 in Folder 2',
 				icon: 'fa',
 			}, {
 				id: '7',
-				name: 'test child 3 of folder 3',
+				name: 'File 3 in Folder 2',
 				icon: 'fa',
 			},
 		],
+	}, {
+		id: '8',
+		name: 'File in root',
+		icon: 'fa',
 	},
 ];
 
