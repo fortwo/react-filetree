@@ -22,7 +22,7 @@ class TreeNode extends React.Component {
 	}
 
 	render() {
-		if (this.props.children && this.props.children.length) {
+		if (this.props.children) {
 			return (
 				<div>
 					<Folder 
@@ -51,12 +51,6 @@ class TreeNode extends React.Component {
 			);
 		} else {
 			return (
-				(this.props.children && !this.props.children.length) ?			
-					<Folder 
-						name={this.props.name}
-						toggleFolder={this.toggleFolder}
-					/>
-				:
 					<File 
 						id={this.props.id}
 						name={this.props.name}
