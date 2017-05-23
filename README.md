@@ -11,7 +11,7 @@ npm install --save react-filetree
 
 ## Usage
 
-### data.json
+### data.js
 ```
 const action = (event) => {
 	console.log('action', event)
