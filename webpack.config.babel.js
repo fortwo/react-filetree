@@ -2,8 +2,12 @@ import path from 'path';
 import webpack from 'webpack';
  
 const options = {
-  entry: './index.js',
-  output: { path: __dirname, filename: 'bundle.js' },
+  entry: './example/index.js',
+  output: { 
+    path: path.join(__dirname, 'example'), 
+    filename: 'bundle.js',
+    publicPath: '/example/',
+  },
   module: {
     loaders: [
       {
@@ -27,6 +31,12 @@ const options = {
       },
     ]
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'example'),
+    publicPath: '/example/',
+    port: 3000,
+    hot: true
+  }
 };
 
 module.exports = options;
