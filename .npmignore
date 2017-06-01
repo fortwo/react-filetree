@@ -1,0 +1,7 @@
+assets/
+example/
+src/
+.gitignore
+.npmignore
+webpack.babel.js
+webpack.prod.babel.js
