@@ -1,11 +1,12 @@
 {
   "name": "react-filetree",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple filetree build with ReactJS",
-  "main": "index.js",
+  "main": "/dist/react-filetree.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "build-dist": "webpack --config webpack.prod.babel.js"
   },
   "repository": {
     "type": "git",
