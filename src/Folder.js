@@ -35,4 +35,6 @@ Folder.defaultProps = {
 	open: false,
 };
 
-export default Folder;
+export {
+  Folder,
+};

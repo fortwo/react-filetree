@@ -42,4 +42,6 @@ File.defaultProps = {
 	icon: DefaultFileIcon,
 }
 
-export default File;
+export {
+  File,
+};
