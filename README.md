@@ -79,7 +79,7 @@ export default data;
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FileTree from 'react-filetree';
+import { FileTree } from 'react-filetree';
 
 import data from './data.js';
 
