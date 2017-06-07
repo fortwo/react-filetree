@@ -5,7 +5,9 @@ const options = {
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'react-filetree.js',
-		publicPath: '/dist',
+		publicPath: '/',
+    library: 'FileTree',
+    libraryTarget: 'umd',
 	},
 	module: {
     loaders: [
