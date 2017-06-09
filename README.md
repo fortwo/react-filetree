@@ -11,6 +11,9 @@ npm install --save react-filetree
 
 ## Usage
 
+![Example]
+(assets/example.gif)
+
 ### data.js
 ```
 const action = (event) => {

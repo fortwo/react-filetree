@@ -21,6 +21,7 @@ const options = {
       }, {
         test: /\.(jpg|png|gif)$/,
         loader: 'file-loader',
+        exclude: '/assets/example.gif',
       }, {
         test: /\.(jpg|png|gif)$/,
         loader: 'image-webpack-loader',
@@ -28,7 +29,8 @@ const options = {
           optipng: {
             optimizationLevel: 7,
           },
-        }
+        },
+        exclude: '/assets/example.gif',
       },
     ]
   },

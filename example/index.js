@@ -6,7 +6,8 @@ import { FileTree } from '../src/FileTree';
 
 // Sample Data
 const action = (event) => {
-	console.log('action', event)
+	const file = event.name;
+	alert(`action: ${file}`);
 }
 
 const sampleData = [
