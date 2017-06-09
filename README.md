@@ -11,8 +11,7 @@ npm install --save react-filetree
 
 ## Usage
 
-![Example]
-(/assets/example.gif)
+![Example](assets/example.gif)
 
 ### data.js
 ```
