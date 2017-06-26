@@ -1,0 +1,5 @@
+--require test/mochacfg.js
+--require test/setup.js
+--recursive test/**/*.test.js
+--compilers js:babel-core/register
+--colors
