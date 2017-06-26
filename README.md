@@ -1,5 +1,6 @@
 # react-filetree
-Simple filetree built with ReactJS
+![npm](https://badge.fury.io/js/react-filetree.svg)
+![npm](https://img.shields.io/npm/dm/react-filetree.svg?style=flat)
 
 Currently work in progress...more functionalities and customizations will arrive soon!
 
